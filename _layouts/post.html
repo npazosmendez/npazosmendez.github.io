@@ -1,6 +1,8 @@
 ---
 layout: default
 ---
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2"></script>
 
 <article class="post">
   <h1>{{ page.title }}</h1>
@@ -9,9 +11,16 @@ layout: default
     {{ content }}
   </div>
 
+    <div class="fb-like" style="float:right;" data-href="https://npazosmendez.github.io/computer-science" data-layout="box_count" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
   <div class="date">
+
+  
     Written on {{ page.date | date: "%B %e, %Y" }}
+    <br>
+    <br>
   </div>
 
-  {% include disqus.html %}
+
+  
+{% include disqus.html %}
 </article>
